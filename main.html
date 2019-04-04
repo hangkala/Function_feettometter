@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h2>From meter to Foot and Reverse</h2>
+</head>
+<body>
+<h3>Input value of meter or foot</h3>
+<input type="text" id="chieudai">
+<input type="button" onclick="toMeter()" value="To Meter">
+<input type="button" onclick="toFeet()" value="To Foot">
+<br/>
+<p id="demo"></p>
+<script>
+function toMeter() {
+    let doDai = parseInt(document.getElementById("chieudai").value);
+    document.getElementById("demo").innerHTML = doDai*0.305 + ' meter';
+}
+
+function toFeet() {
+    let doDai = parseInt(document.getElementById("chieudai").value);
+    document.getElementById("demo").innerHTML = doDai*3.279 + ' foot';
+}
+
+</script>
+</body>
+</html>
